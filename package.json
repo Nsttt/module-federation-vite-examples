@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "react": "cd react && pnpm dev",
-    "postinstall": "cd react && pnpm build"
+    "react:dev": "pnpm -C react dev",
+    "react:preview": "pnpm -C react preview",
+    "vue:dev": "pnpm -C vue dev",
+    "vue:preview": "pnpm -C vue preview",
+    "postinstall": "pnpm -C react build && pnpm -C vue build"
   },
   "repository": {
     "type": "git",

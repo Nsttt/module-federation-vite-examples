@@ -1,6 +1,8 @@
 packages:
-  - 'react'
-  - 'react/*'
+  - "react"
+  - "react/*"
+  - "vue"
+  - "vue/*"
 
 catalog:
-  '@module-federation/vite': 'https://pkg.pr.new/@module-federation/vite@425'
+  "@module-federation/vite": "https://pkg.pr.new/@module-federation/vite@425"
