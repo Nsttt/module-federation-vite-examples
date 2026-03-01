@@ -18,7 +18,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "pnpm react:preview",
+    command: process.env.PLAYWRIGHT_TEST_COMMAND || "pnpm react:preview",
     url: "http://localhost:4173",
     reuseExistingServer: !process.env.CI,
   },
