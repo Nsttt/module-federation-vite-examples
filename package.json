@@ -10,7 +10,7 @@
     "react:preview": "pnpm -C react preview",
     "vue:dev": "pnpm -C vue dev",
     "vue:preview": "pnpm -C vue preview",
-    "postinstall": "pnpm -C react build"
+    "postinstall": "pnpm -C react build && pnpm -C vue build"
   },
   "repository": {
     "type": "git",
