@@ -39,6 +39,7 @@ export default defineConfig(({ mode }) => {
             requiredVersion: dependencies.react,
             singleton: true,
           },
+          "react/": {},
           "react-dom": {
             requiredVersion: dependencies["react-dom"],
             singleton: true,
