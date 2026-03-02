@@ -22,7 +22,7 @@ console.log("remote got message:", state.message);
     "
     data-e2e="APP__CARD"
   >
-    <div className="icon">
+    <div class="icon">
       <img :src="image" alt="" />
     </div>
     <div style="margin-top: 10px; font-size: 25px">I'm the remote app</div>
