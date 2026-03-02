@@ -1,6 +1,5 @@
 {
   "name": "vue",
-  "version": "1.0.0",
   "description": "Module Federation Vite + Vue3 is now possible",
   "scripts": {
     "install:deps": "pnpm --filter vue-* install",

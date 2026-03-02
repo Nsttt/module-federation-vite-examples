@@ -1,6 +1,5 @@
 {
   "name": "vue-host",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite --port 4173",

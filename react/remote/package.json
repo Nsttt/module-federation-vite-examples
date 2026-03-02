@@ -1,6 +1,5 @@
 {
   "name": "react-remote",
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port 4174",

@@ -8,9 +8,11 @@
     "fmt.check": "oxfmt --check react vue",
     "react:dev": "pnpm -C react dev",
     "react:preview": "pnpm -C react preview",
+    "svelte:dev": "pnpm -C svelte dev",
+    "svelte:preview": "pnpm -C svelte preview",
     "vue:dev": "pnpm -C vue dev",
     "vue:preview": "pnpm -C vue preview",
-    "postinstall": "pnpm -C react build && pnpm -C vue build"
+    "postinstall": "pnpm -C react build && pnpm -C svelte build && pnpm -C vue build"
   },
   "repository": {
     "type": "git",

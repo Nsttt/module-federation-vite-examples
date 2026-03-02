@@ -1,6 +1,5 @@
 {
   "name": "react",
-  "version": "0.0.0",
   "description": "Module Federation Vite + React is now possible",
   "scripts": {
     "install:deps": "pnpm --filter react-* install",
