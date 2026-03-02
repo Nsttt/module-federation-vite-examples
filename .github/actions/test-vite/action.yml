@@ -6,7 +6,7 @@ inputs:
     description: Vite version to test (e.g. "5", "6", "rolldown-vite")
     required: true
   framework:
-    description: Framework to test (e.g. "react", "vue", "svelte")
+    description: Framework to test (e.g. "react", "vue")
     required: true
 
 runs:
