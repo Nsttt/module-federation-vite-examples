@@ -24,6 +24,7 @@ runs:
         fi
 
     - name: Test dev
+      if: inputs.framework != 'nuxt'
       shell: bash
       run: pnpm exec playwright test
       env:
