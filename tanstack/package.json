@@ -1,0 +1,9 @@
+{
+  "name": "tanstack",
+  "description": "Module Federation Vite + TanStack is now possible",
+  "scripts": {
+    "dev": "pnpm --filter tanstack-* dev",
+    "build": "pnpm --filter tanstack-* build",
+    "preview": "pnpm --filter tanstack-* preview"
+  }
+}

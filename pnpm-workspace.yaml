@@ -5,6 +5,8 @@ packages:
   - "react/*"
   - "svelte"
   - "svelte/*"
+  - "tanstack"
+  - "tanstack/*"
   - "vue"
   - "vue/*"
 
