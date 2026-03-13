@@ -6,10 +6,14 @@ A collection of Module Federation examples built with Vite, used to test new [@m
 
 ## Examples
 
-| Example          | Host         | Remote         | Framework |
-| ---------------- | ------------ | -------------- | --------- |
-| [React](./react) | `react-host` | `react-remote` | React 19  |
-| [Vue](./vue)     | `vue-host`   | `vue-remote`   | Vue 3     |
+| Example                | Host            | Remote            | Framework                   |
+| ---------------------- | --------------- | ----------------- | --------------------------- |
+| [Nuxt](./nuxt)         | `nuxt-host`     | `nuxt-remote`     | Nuxt 4                      |
+| [React](./react)       | `react-host`    | `react-remote`    | React 19                    |
+| [Svelte](./svelte)     | `svelte-host`   | `svelte-remote`   | Svelte 5                    |
+| [TanStack](./tanstack) | `tanstack-host` | `tanstack-remote` | TanStack Router + React 19  |
+| [Vinext](./vinext)     | `vinext-host`   | `vinext-remote`   | Vinext + Next 16 + React 19 |
+| [Vue](./vue)           | `vue-host`      | `vue-remote`      | Vue 3                       |
 
 Each example follows a **host/remote** architecture with shared dependencies.
 
@@ -25,11 +29,13 @@ Each example follows a **host/remote** architecture with shared dependencies.
 # Install dependencies
 pnpm install
 
-# Run React example
+# Run examples
 pnpm react:dev
-
-# Run Vue example
 pnpm vue:dev
+pnpm svelte:dev
+pnpm tanstack:dev
+pnpm nuxt:dev
+pnpm vinext:dev
 ```
 
 ## E2E Tests
