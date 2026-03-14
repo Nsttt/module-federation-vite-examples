@@ -1,3 +1,4 @@
+import { SharedBadge } from "@mf-vite-example/shared-ui";
 import { lazy, Suspense, useEffect } from "react";
 import { of, tap } from "rxjs";
 import "./App.css";
@@ -37,6 +38,7 @@ export default () => {
           </div>
           <div className="title">I'm the host app</div>
           <Counter />
+          <SharedBadge label="shared ui from host" />
         </div>
       </div>
 

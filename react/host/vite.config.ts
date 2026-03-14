@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import { dependencies } from "./package.json";
 
 export default defineConfig(() => ({
-  server: { fs: { allow: [".", "../shared"] } },
+  server: { fs: { allow: [".", "..", "../shared"] } },
   build: {
     target: "chrome89",
   },
@@ -25,6 +25,9 @@ export default defineConfig(() => ({
       exposes: {},
       filename: "remoteEntry.js",
       shared: {
+        "@mf-vite-example/shared-ui": {
+          singleton: true,
+        },
         react: {
           requiredVersion: dependencies.react,
           singleton: true,

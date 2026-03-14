@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     server: {
       fs: {
-        allow: [".", "../shared"],
+        allow: [".", "..", "../shared"],
       },
     },
     build: {
@@ -36,6 +36,9 @@ export default defineConfig(({ mode }) => {
         },
         remotes: {},
         shared: {
+          "@mf-vite-example/shared-ui": {
+            singleton: true,
+          },
           react: {
             requiredVersion: dependencies.react,
             singleton: true,

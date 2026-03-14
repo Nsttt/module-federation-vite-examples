@@ -66,6 +66,9 @@ importers:
 
   react/host:
     dependencies:
+      '@mf-vite-example/shared-ui':
+        specifier: workspace:*
+        version: link:../shared-ui
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -97,6 +100,9 @@ importers:
 
   react/remote:
     dependencies:
+      '@mf-vite-example/shared-ui':
+        specifier: workspace:*
+        version: link:../shared-ui
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -122,6 +128,16 @@ importers:
       vite:
         specifier: 7.3.1
         version: 7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
+
+  react/shared-ui:
+    dependencies:
+      react:
+        specifier: ^19.2.4
+        version: 19.2.4
+    devDependencies:
+      '@types/react':
+        specifier: 19.2.14
+        version: 19.2.14
 
   svelte: {}
 

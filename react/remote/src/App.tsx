@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { SharedBadge } from "@mf-vite-example/shared-ui";
 import Counter from "./components/Counter";
 
 export default () => {
@@ -38,6 +39,7 @@ export default () => {
       </div>
       <div style={{ marginTop: "10px", fontSize: "25px" }}>I'm the remote app</div>
       <Counter />
+      <SharedBadge label="shared ui from remote" />
     </div>
   );
 };
