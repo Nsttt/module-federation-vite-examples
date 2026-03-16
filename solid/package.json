@@ -1,0 +1,9 @@
+{
+  "name": "solid",
+  "description": "Module Federation Vite + Solid is now possible",
+  "scripts": {
+    "dev": "pnpm --filter solid-* dev",
+    "build": "pnpm --filter solid-* build",
+    "preview": "pnpm --filter solid-* preview"
+  }
+}
