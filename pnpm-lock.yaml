@@ -7,7 +7,7 @@ settings:
 catalogs:
   default:
     '@module-federation/vite':
-      specifier: https://pkg.pr.new/@module-federation/vite@489
+      specifier: https://pkg.pr.new/@module-federation/vite@488
       version: 1.13.0
 
 importers:
@@ -30,7 +30,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
       '@pinia/nuxt':
         specifier: ^0.11.3
         version: 0.11.3(magicast@0.5.2)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))
@@ -48,7 +48,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))
       '@pinia/nuxt':
         specifier: ^0.11.3
         version: 0.11.3(magicast@0.5.2)(pinia@2.3.1(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))
@@ -81,7 +81,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@types/react':
         specifier: 19.2.14
         version: 19.2.14
@@ -112,7 +112,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@types/react':
         specifier: 19.2.14
         version: 19.2.14
@@ -153,7 +153,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       solid-js:
         specifier: ^1.9.11
         version: 1.9.11
@@ -175,7 +175,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       solid-js:
         specifier: ^1.9.11
         version: 1.9.11
@@ -199,7 +199,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
         version: 3.0.10(@sveltejs/kit@2.53.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.53.7)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)))(svelte@5.53.7)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)))
@@ -239,7 +239,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
         version: 3.0.10(@sveltejs/kit@2.53.4(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.53.7)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)))(svelte@5.53.7)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)))
@@ -294,7 +294,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@tanstack/router-cli':
         specifier: ^1.166.7
         version: 1.166.7
@@ -331,7 +331,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       '@tanstack/router-cli':
         specifier: ^1.166.7
         version: 1.166.7
@@ -360,7 +360,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       next:
         specifier: 16.1.6
         version: 16.1.6(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -406,7 +406,7 @@ importers:
     dependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))
       next:
         specifier: 16.1.6
         version: 16.1.6(@playwright/test@1.58.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -461,7 +461,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))
       '@types/node':
         specifier: ^18.11.12
         version: 18.19.130
@@ -501,7 +501,7 @@ importers:
     devDependencies:
       '@module-federation/vite':
         specifier: 'catalog:'
-        version: https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))
+        version: https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))
       '@types/node':
         specifier: ^18.11.12
         version: 18.19.130
@@ -1109,8 +1109,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@module-federation/dts-plugin@2.2.0':
-    resolution: {integrity: sha512-vsoL9z5MjbwdG2H4Z+6ipOnNYKGWNSjb+LHKwKWfi1VC8YP/AzFAqka18+z+hZoTIM676SSrH206kI5NyL4hrA==}
+  '@module-federation/dts-plugin@2.2.1':
+    resolution: {integrity: sha512-XmGwPyb0F88uR1wKCjJV1oR9zY1h1easCZymavOiklbC1KYADUUd90P4ti+2NesUdLsSdAE0EUzEhD4k+8B/8A==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1118,32 +1118,31 @@ packages:
       vue-tsc:
         optional: true
 
-  '@module-federation/error-codes@2.0.1':
-    resolution: {integrity: sha512-2bJF/ft+qL9L6Zvq2t/G9/f/0wFL73cM8/NJ04uyYz9BjIgvx28K5qu8/6+IwgEEKATG7vOhBBVj6wH3S+5ASA==}
+  '@module-federation/error-codes@2.2.1':
+    resolution: {integrity: sha512-uucGTGpLk43HiOxLSsm04o/dk4nCde4NxfUrIsdJoFjQcnvC9rvDiuSqyoLm+8wxF7TOKSeZ0OG3I6h6/RKjsA==}
 
-  '@module-federation/error-codes@2.2.0':
-    resolution: {integrity: sha512-9smbcTk1ZKQJ1unSHsZ920IfI6hFGFUMZlvKWDR3C+a0hy8zCyKj9nbk/4atkVcH7qIeRw5+kVCTiEEi2IAoGA==}
+  '@module-federation/managers@2.2.1':
+    resolution: {integrity: sha512-lndwQ2Pu8TKgmhc5+jykAcHbDeSUGuxdFNYp+7C2oFps4vc5m1aGRl8WB9Lm9LX1xmF4qhz0/CVZ/oCt4rSv4w==}
 
-  '@module-federation/managers@2.2.0':
-    resolution: {integrity: sha512-ao/r4uty+anbhb5dBDoa3BjIEe3zOMt3j4npEsS8OWTs0VAQYJikie09dN0K+dyg5KrsyMSDIwj3HqFlwztu1A==}
+  '@module-federation/runtime-core@2.2.1':
+    resolution: {integrity: sha512-u+cv5h599CriHsjjT7Xg7retuV6SnKPqA+/PjdSOZNkS3DR9PM+lmRZYb5p3qEricykbc0DdL4ZeHVPwGwlqWA==}
 
-  '@module-federation/runtime-core@2.0.1':
-    resolution: {integrity: sha512-gOuCPSHoQGUGwlxfSTMInFX+QvLxdEWegGGMiLdU5vqbXuva4E9M+kXBBO7/0MkcBPMmVs0wOJGm0XOLeV2f1Q==}
+  '@module-federation/runtime@2.2.1':
+    resolution: {integrity: sha512-FNE0jqhDvAEm84uyNVbGizbfrESk2Ftl/NdPpfADYiLa/zTapTGgbvkSHkrpTI7nqvwe/s4nPe05uNyo3fJCAg==}
 
-  '@module-federation/runtime@2.0.1':
-    resolution: {integrity: sha512-UQ72P5Oo40dS6vdhHetwTtIsbGciEr+bjoYvDgh1WLPfFlTYd8zo9cLfqaf3juuPfV3cMVARAVPmh16lQYpUGA==}
+  '@module-federation/sdk@2.2.1':
+    resolution: {integrity: sha512-J99VObuxkzwO57VvUwq1mDhbqvnqXmtBEossxiMlxayp2u2cGUNg94KD4tBrZQ/cZKce1nmufo5TxkUGnPKyjA==}
+    peerDependencies:
+      node-fetch: ^3.3.2
+    peerDependenciesMeta:
+      node-fetch:
+        optional: true
 
-  '@module-federation/sdk@2.0.1':
-    resolution: {integrity: sha512-32PwudojGjog51cwpTali7D6ud82oVgsyvOx9JjAzhvXBX96YI4mRsursuWcthDxmigJP9ZvUTXDuRUEDh1OQA==}
+  '@module-federation/third-party-dts-extractor@2.2.1':
+    resolution: {integrity: sha512-gIx2qQT9fMklnUf+SBnZHD0tbBrPhWP9krccxXR+BzwDVtjnP6hlYDzbiElx0c4oFaL48cxMwiHgVixybw/xEQ==}
 
-  '@module-federation/sdk@2.2.0':
-    resolution: {integrity: sha512-X6n/lo+ESQ2Gx/IJXWfrOuW/pD3NuJNgIQZ9UuIomDqHCcs1QqfDXbNw1Jk4GG73cUsmuEvuv1lIjAb2AjSXTg==}
-
-  '@module-federation/third-party-dts-extractor@2.2.0':
-    resolution: {integrity: sha512-bDmONGFEcT7ouhoPIE1vfp7kQIndyY8/OySzykhRQzVC7iTUExB7XEUcVSpvW8zAdWzpY1YeUbLkajirSBOGeA==}
-
-  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@489':
-    resolution: {integrity: sha512-FNcDSXSKB3sAVfTx4OkOH9gVxOu9JQoAeO9wb02zNS81USCQoV52R7MsIQZp8gS1d3wdUP3d+A6w5ilS/PLyqw==, tarball: https://pkg.pr.new/@module-federation/vite@489}
+  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@488':
+    resolution: {tarball: https://pkg.pr.new/@module-federation/vite@488}
     version: 1.13.0
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -7390,12 +7389,12 @@ snapshots:
       - encoding
       - supports-color
 
-  '@module-federation/dts-plugin@2.2.0(typescript@4.7.4)(vue-tsc@1.8.27(typescript@4.7.4))':
+  '@module-federation/dts-plugin@2.2.1(typescript@4.7.4)(vue-tsc@1.8.27(typescript@4.7.4))':
     dependencies:
-      '@module-federation/error-codes': 2.2.0
-      '@module-federation/managers': 2.2.0
-      '@module-federation/sdk': 2.2.0
-      '@module-federation/third-party-dts-extractor': 2.2.0
+      '@module-federation/error-codes': 2.2.1
+      '@module-federation/managers': 2.2.1
+      '@module-federation/sdk': 2.2.1
+      '@module-federation/third-party-dts-extractor': 2.2.1
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
       axios: 1.13.6
@@ -7413,15 +7412,16 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - supports-color
       - utf-8-validate
 
-  '@module-federation/dts-plugin@2.2.0(typescript@5.9.3)':
+  '@module-federation/dts-plugin@2.2.1(typescript@5.9.3)':
     dependencies:
-      '@module-federation/error-codes': 2.2.0
-      '@module-federation/managers': 2.2.0
-      '@module-federation/sdk': 2.2.0
-      '@module-federation/third-party-dts-extractor': 2.2.0
+      '@module-federation/error-codes': 2.2.1
+      '@module-federation/managers': 2.2.1
+      '@module-federation/sdk': 2.2.1
+      '@module-federation/third-party-dts-extractor': 2.2.1
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
       axios: 1.13.6
@@ -7437,15 +7437,16 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - supports-color
       - utf-8-validate
 
-  '@module-federation/dts-plugin@2.2.0(typescript@5.9.3)(vue-tsc@1.8.27(typescript@5.9.3))':
+  '@module-federation/dts-plugin@2.2.1(typescript@5.9.3)(vue-tsc@1.8.27(typescript@5.9.3))':
     dependencies:
-      '@module-federation/error-codes': 2.2.0
-      '@module-federation/managers': 2.2.0
-      '@module-federation/sdk': 2.2.0
-      '@module-federation/third-party-dts-extractor': 2.2.0
+      '@module-federation/error-codes': 2.2.1
+      '@module-federation/managers': 2.2.1
+      '@module-federation/sdk': 2.2.1
+      '@module-federation/third-party-dts-extractor': 2.2.1
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
       axios: 1.13.6
@@ -7463,45 +7464,48 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - supports-color
       - utf-8-validate
 
-  '@module-federation/error-codes@2.0.1': {}
+  '@module-federation/error-codes@2.2.1': {}
 
-  '@module-federation/error-codes@2.2.0': {}
-
-  '@module-federation/managers@2.2.0':
+  '@module-federation/managers@2.2.1':
     dependencies:
-      '@module-federation/sdk': 2.2.0
+      '@module-federation/sdk': 2.2.1
       find-pkg: 2.0.0
       fs-extra: 9.1.0
+    transitivePeerDependencies:
+      - node-fetch
 
-  '@module-federation/runtime-core@2.0.1':
+  '@module-federation/runtime-core@2.2.1':
     dependencies:
-      '@module-federation/error-codes': 2.0.1
-      '@module-federation/sdk': 2.0.1
+      '@module-federation/error-codes': 2.2.1
+      '@module-federation/sdk': 2.2.1
+    transitivePeerDependencies:
+      - node-fetch
 
-  '@module-federation/runtime@2.0.1':
+  '@module-federation/runtime@2.2.1':
     dependencies:
-      '@module-federation/error-codes': 2.0.1
-      '@module-federation/runtime-core': 2.0.1
-      '@module-federation/sdk': 2.0.1
+      '@module-federation/error-codes': 2.2.1
+      '@module-federation/runtime-core': 2.2.1
+      '@module-federation/sdk': 2.2.1
+    transitivePeerDependencies:
+      - node-fetch
 
-  '@module-federation/sdk@2.0.1': {}
+  '@module-federation/sdk@2.2.1': {}
 
-  '@module-federation/sdk@2.2.0': {}
-
-  '@module-federation/third-party-dts-extractor@2.2.0':
+  '@module-federation/third-party-dts-extractor@2.2.1':
     dependencies:
       find-pkg: 2.0.0
       fs-extra: 9.1.0
       resolve: 1.22.8
 
-  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))':
+  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@4.7.4)(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@4.7.4))':
     dependencies:
-      '@module-federation/dts-plugin': 2.2.0(typescript@4.7.4)(vue-tsc@1.8.27(typescript@4.7.4))
-      '@module-federation/runtime': 2.0.1
-      '@module-federation/sdk': 2.0.1
+      '@module-federation/dts-plugin': 2.2.1(typescript@4.7.4)(vue-tsc@1.8.27(typescript@4.7.4))
+      '@module-federation/runtime': 2.2.1
+      '@module-federation/sdk': 2.2.1
       '@rollup/pluginutils': 5.3.0(rollup@4.59.0)
       defu: 6.1.4
       estree-walker: 3.0.3
@@ -7511,17 +7515,18 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - rollup
       - supports-color
       - typescript
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))':
+  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.37)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@1.8.27(typescript@5.9.3))':
     dependencies:
-      '@module-federation/dts-plugin': 2.2.0(typescript@5.9.3)(vue-tsc@1.8.27(typescript@5.9.3))
-      '@module-federation/runtime': 2.0.1
-      '@module-federation/sdk': 2.0.1
+      '@module-federation/dts-plugin': 2.2.1(typescript@5.9.3)(vue-tsc@1.8.27(typescript@5.9.3))
+      '@module-federation/runtime': 2.2.1
+      '@module-federation/sdk': 2.2.1
       '@rollup/pluginutils': 5.3.0(rollup@4.59.0)
       defu: 6.1.4
       estree-walker: 3.0.3
@@ -7531,17 +7536,18 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - rollup
       - supports-color
       - typescript
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@489(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
+  '@module-federation/vite@https://pkg.pr.new/@module-federation/vite@488(rollup@4.59.0)(typescript@5.9.3)(vite@8.0.0(@types/node@20.19.37)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
-      '@module-federation/dts-plugin': 2.2.0(typescript@5.9.3)
-      '@module-federation/runtime': 2.0.1
-      '@module-federation/sdk': 2.0.1
+      '@module-federation/dts-plugin': 2.2.1(typescript@5.9.3)
+      '@module-federation/runtime': 2.2.1
+      '@module-federation/sdk': 2.2.1
       '@rollup/pluginutils': 5.3.0(rollup@4.59.0)
       defu: 6.1.4
       estree-walker: 3.0.3
@@ -7551,6 +7557,7 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - debug
+      - node-fetch
       - rollup
       - supports-color
       - typescript
