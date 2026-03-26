@@ -57,13 +57,6 @@ jobs:
           vite-version: "8"
           framework: ${{ matrix.framework }}
 
-      - name: Test rolldown-vite
-        if: matrix.framework != 'svelte' && matrix.framework != 'nuxt'
-        uses: ./.github/actions/test-vite
-        with:
-          vite-version: rolldown-vite
-          framework: ${{ matrix.framework }}
-
       - name: Test nuxt
         if: matrix.framework == 'nuxt'
         uses: ./.github/actions/test-vite

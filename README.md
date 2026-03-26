@@ -22,7 +22,6 @@ Each example follows a **host/remote** architecture with shared dependencies.
 
 - Vite 7
 - Vite 8
-- rolldown-vite
 
 ## Getting Started
 
