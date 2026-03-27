@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
         remote: {
           type: "module",
           name: "remote",
-          entry: "http://localhost:5174/remoteEntry.js",
+          entry: "http://localhost:4174/remoteEntry.js",
           entryGlobalName: "remote",
           shareScope: "default",
         },
