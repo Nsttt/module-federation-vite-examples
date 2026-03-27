@@ -1,5 +1,13 @@
 import { CommonModule } from "@angular/common";
-import { Component, effect, viewChild, ViewContainerRef } from "@angular/core";
+import {
+  Component,
+  EnvironmentInjector,
+  AfterViewInit,
+  OnDestroy,
+  runInInjectionContext,
+  viewChild,
+  ViewContainerRef,
+} from "@angular/core";
 import { CounterComponent } from "./counter.component";
 
 @Component({
@@ -32,13 +40,26 @@ import { CounterComponent } from "./counter.component";
   `,
   imports: [CommonModule, CounterComponent],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit, OnDestroy {
   viewContainer = viewChild("remote_app", { read: ViewContainerRef });
+  private remoteComponentRef: { destroy: () => void } | null = null;
 
-  constructor() {
-    effect(async () => {
-      const m = await import("remote/remote-app");
-      this.viewContainer()?.createComponent(m.AppComponent);
+  constructor(private readonly environmentInjector: EnvironmentInjector) {}
+
+  ngAfterViewInit() {
+    import("remote/remote-app").then((m) => {
+      runInInjectionContext(this.environmentInjector, () => {
+        const componentRef = this.viewContainer()?.createComponent(m.AppComponent, {
+          environmentInjector: this.environmentInjector,
+        });
+        if (componentRef) {
+          this.remoteComponentRef = componentRef;
+        }
+      });
     });
+  }
+
+  ngOnDestroy() {
+    this.remoteComponentRef?.destroy();
   }
 }
