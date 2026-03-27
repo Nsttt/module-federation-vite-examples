@@ -1,18 +1,6 @@
 packages:
-  - "nuxt"
-  - "nuxt/*"
-  - "react"
-  - "react/*"
-  - "solid"
-  - "solid/*"
-  - "svelte"
-  - "svelte/*"
-  - "tanstack"
-  - "tanstack/*"
-  - "vinext"
-  - "vinext/*"
-  - "vue"
-  - "vue/*"
+  - "{angular,nuxt,react,solid,svelte,tanstack,vinext,vue}"
+  - "{angular,nuxt,react,solid,svelte,tanstack,vinext,vue}/*"
 
 catalog:
   "@module-federation/vite": "https://pkg.pr.new/@module-federation/vite@557"

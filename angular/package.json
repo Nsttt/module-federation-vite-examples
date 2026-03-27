@@ -1,0 +1,9 @@
+{
+  "name": "angular",
+  "description": "Module Federation Vite + Angular is now possible",
+  "scripts": {
+    "dev": "pnpm --filter angular-* dev",
+    "build": "pnpm --filter angular-* build",
+    "preview": "pnpm --filter angular-* preview"
+  }
+}
