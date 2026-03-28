@@ -8,6 +8,7 @@ A collection of Module Federation examples built with Vite, used to test new [@m
 
 | Example                | Host            | Remote            | Framework                   |
 | ---------------------- | --------------- | ----------------- | --------------------------- |
+| [Angular](./angular)   | `angular-host`  | `angular-remote`  | Angular                     |
 | [Nuxt](./nuxt)         | `nuxt-host`     | `nuxt-remote`     | Nuxt 4                      |
 | [React](./react)       | `react-host`    | `react-remote`    | React 19                    |
 | [Solid](./solid)       | `solid-host`    | `solid-remote`    | Solid                       |
@@ -30,6 +31,7 @@ Each example follows a **host/remote** architecture with shared dependencies.
 pnpm install
 
 # Run examples
+pnpm angular:dev
 pnpm react:dev
 pnpm solid:dev
 pnpm vue:dev
