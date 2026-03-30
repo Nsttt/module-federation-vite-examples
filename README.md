@@ -57,9 +57,6 @@ pnpm exec playwright test
 
 # Run tests for Vue example
 PLAYWRIGHT_TEST_COMMAND="pnpm vue:preview" pnpm exec playwright test
-
-# Run tests for Preact example
-PLAYWRIGHT_TEST_COMMAND="pnpm preact:preview" pnpm exec playwright test
 ```
 
 ## Testing a PR
