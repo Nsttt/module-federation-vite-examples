@@ -1,0 +1,9 @@
+{
+  "name": "preact",
+  "description": "Module Federation Vite + Preact is now possible",
+  "scripts": {
+    "dev": "pnpm --filter @mf-vite-example/shared-ui build && pnpm --filter preact-* dev",
+    "build": "pnpm --filter @mf-vite-example/shared-ui build && pnpm --filter preact-* build",
+    "preview": "pnpm --filter preact-* preview"
+  }
+}
