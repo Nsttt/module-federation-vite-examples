@@ -1,4 +1,4 @@
-# Alpine.js host and remote
+# Lit host and remote
 
 ## Getting started
 

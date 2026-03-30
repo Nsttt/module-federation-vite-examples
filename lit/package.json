@@ -1,0 +1,9 @@
+{
+  "name": "lit",
+  "description": "Module Federation Vite + Lit is now possible",
+  "scripts": {
+    "dev": "pnpm --filter lit-* dev",
+    "build": "pnpm --filter lit-* build",
+    "preview": "pnpm --filter lit-* preview"
+  }
+}
