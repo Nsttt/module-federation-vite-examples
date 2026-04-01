@@ -103,6 +103,10 @@ test("host app should reflect vue remote HMR label updates in dev mode", async (
       original.replace("Remote counter:", updatedLabel),
       "utf8"
     );
+    const updated = await readFile(vueRemoteCounterPath, "utf8");
+
+    expect(updated).not.toBe(original);
+    expect(updated).toContain(updatedLabel);
 
     await expect(btn(page, /Remote counter updated via HMR: 0/)).toBeVisible({
       timeout: 15000,
