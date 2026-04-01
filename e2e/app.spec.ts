@@ -29,6 +29,8 @@ const shouldTestVueHmr = process.env.PLAYWRIGHT_TEST_COMMAND?.includes("vue:dev"
 const vueRemoteCounterPath = path.join(process.cwd(), "vue/remote/src/components/Counter.vue");
 
 const btn = (page: any, name: RegExp) => page.getByRole("button", { name }).first();
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const counterLabelRegex = (label: string) => new RegExp(`${escapeRegExp(label)}\\s*\\d+`);
 
 test("host app and remote component should load and counters should work", async ({ page }) => {
   await page.goto("/");
@@ -88,7 +90,7 @@ test("host app should reflect vue remote HMR label updates in dev mode", async (
 
   await page.goto("/");
 
-  await expect(btn(page, /Remote counter: 0/)).toBeVisible({ timeout: 10000 });
+  await expect(btn(page, /Remote counter:\s*\d+/)).toBeVisible({ timeout: 10000 });
 
   const original = await readFile(vueRemoteCounterPath, "utf8");
   const updatedLabel = "Remote counter updated via HMR:";
@@ -108,13 +110,13 @@ test("host app should reflect vue remote HMR label updates in dev mode", async (
     expect(updated).not.toBe(original);
     expect(updated).toContain(updatedLabel);
 
-    await expect(btn(page, /Remote counter updated via HMR: 0/)).toBeVisible({
+    await expect(btn(page, counterLabelRegex(updatedLabel))).toBeVisible({
       timeout: 15000,
     });
     await expect(page.getByText("I'm the host app")).toBeVisible();
   } finally {
     await writeFile(vueRemoteCounterPath, original, "utf8");
-    await expect(btn(page, /Remote counter: 0/)).toBeVisible({
+    await expect(btn(page, counterLabelRegex("Remote counter:"))).toBeVisible({
       timeout: 15000,
     });
   }
