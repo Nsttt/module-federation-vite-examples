@@ -13,7 +13,7 @@ export default defineConfig(() => ({
     TanStackRouterVite(),
     federation({
       dts: true,
-      dev: { disableDynamicRemoteTypeHints: true },
+      dev: { disableDynamicRemoteTypeHints: true, remoteHmr: true },
       name: "host",
       remotes: {
         remote: {

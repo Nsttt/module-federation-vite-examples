@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
       },
       federation({
         dts: true,
-        dev: { disableDynamicRemoteTypeHints: true },
+        dev: { disableDynamicRemoteTypeHints: true, remoteHmr: true },
         filename: "remoteEntry.js",
         name: "remote",
         exposes: {

@@ -6,6 +6,9 @@ export default defineConfig(() => {
     plugins: [
       federation({
         dts: false,
+        dev: {
+          remoteHmr: true,
+        },
         filename: "remoteEntry.js",
         name: "remote",
         exposes: {

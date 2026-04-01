@@ -8,6 +8,9 @@ export default defineConfig({
     tailwindcss(),
     federation({
       dts: false,
+      dev: {
+        remoteHmr: true,
+      },
       name: "host",
       remotes: {
         remote: {

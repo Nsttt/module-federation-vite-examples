@@ -8,7 +8,7 @@ export default defineConfig({
     tailwindcss(),
     federation({
       dts: true,
-      dev: { disableDynamicRemoteTypeHints: true },
+      dev: { disableDynamicRemoteTypeHints: true, remoteHmr: true },
       filename: "remoteEntry.js",
       name: "remote",
       exposes: {

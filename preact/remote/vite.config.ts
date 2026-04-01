@@ -15,7 +15,7 @@ export default defineConfig(() => ({
   plugins: [
     federation({
       dts: false,
-      dev: { disableDynamicRemoteTypeHints: true },
+      dev: { disableDynamicRemoteTypeHints: true, remoteHmr: true },
       filename: "remoteEntry.js",
       name: "remote",
       exposes: {

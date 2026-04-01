@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     federation({
       dts: true,
-      dev: { disableDynamicRemoteTypeHints: true },
+      dev: { disableDynamicRemoteTypeHints: true, remoteHmr: true },
       filename: "remoteEntry.js",
       name: "remote",
       exposes: {
@@ -17,10 +17,6 @@ export default defineConfig({
       remotes: {},
       shared: {
         "solid-js": {
-          requiredVersion: dependencies["solid-js"],
-          singleton: true,
-        },
-        "solid-js/web": {
           requiredVersion: dependencies["solid-js"],
           singleton: true,
         },
