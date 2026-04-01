@@ -1,4 +1,8 @@
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 import { expect, test } from "@playwright/test";
+
+test.describe.configure({ mode: "serial" });
 
 test.beforeEach(async ({ page }, testInfo) => {
   page.on("console", (message) => {
@@ -21,6 +25,8 @@ test.beforeEach(async ({ page }, testInfo) => {
 const isSharedState =
   process.env.PLAYWRIGHT_TEST_COMMAND?.includes("vue") ||
   process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt");
+const shouldTestVueHmr = process.env.PLAYWRIGHT_TEST_COMMAND?.includes("vue:dev");
+const vueRemoteCounterPath = path.join(process.cwd(), "vue/remote/src/components/Counter.vue");
 
 const btn = (page: any, name: RegExp) => page.getByRole("button", { name }).first();
 
@@ -74,5 +80,38 @@ test("host app and remote component should load and counters should work", async
 
     // Host still at 2
     await expect(btn(page, /Host counter: 2/)).toBeVisible();
+  }
+});
+
+test("host app should reflect vue remote HMR label updates in dev mode", async ({ page }) => {
+  test.skip(!shouldTestVueHmr, "Vue remote HMR check only runs for vue:dev");
+
+  await page.goto("/");
+
+  await expect(btn(page, /Remote counter: 0/)).toBeVisible({ timeout: 10000 });
+
+  const original = await readFile(vueRemoteCounterPath, "utf8");
+  const updatedLabel = "Remote counter updated via HMR:";
+
+  if (!original.includes("Remote counter:")) {
+    throw new Error("Could not find Vue remote counter label");
+  }
+
+  try {
+    await writeFile(
+      vueRemoteCounterPath,
+      original.replace("Remote counter:", updatedLabel),
+      "utf8"
+    );
+
+    await expect(btn(page, /Remote counter updated via HMR: 0/)).toBeVisible({
+      timeout: 15000,
+    });
+    await expect(page.getByText("I'm the host app")).toBeVisible();
+  } finally {
+    await writeFile(vueRemoteCounterPath, original, "utf8");
+    await expect(btn(page, /Remote counter: 0/)).toBeVisible({
+      timeout: 15000,
+    });
   }
 });

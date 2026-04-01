@@ -27,6 +27,9 @@ export default defineConfig(async ({ command, mode }) => {
       },
       federation({
         dts: false,
+        dev: {
+          remoteHmr: true,
+        },
         filename: "remoteEntry.js",
         name: "remote",
         exposes: {
