@@ -18,7 +18,6 @@ export default defineConfig(() => {
         remotes: {},
         shared: {
           lit: { requiredVersion: dependencies.lit, singleton: true },
-          "lit-html": { singleton: true },
         },
       }) as unknown as PluginOption,
     ],

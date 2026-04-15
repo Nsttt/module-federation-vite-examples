@@ -23,7 +23,6 @@ export default defineConfig(() => ({
       filename: "remoteEntry.js",
       shared: {
         lit: { requiredVersion: dependencies.lit, singleton: true },
-        "lit-html": { singleton: true },
       },
     }) as unknown as PluginOption,
   ],
