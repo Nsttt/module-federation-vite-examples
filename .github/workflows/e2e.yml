@@ -54,7 +54,7 @@ jobs:
         if: matrix.framework != 'angular' && matrix.framework != 'nuxt' && matrix.framework != 'svelte'
         uses: ./.github/actions/test-vite
         with:
-          vite-version: "8"
+          vite-version: "8.0.8"
           framework: ${{ matrix.framework }}
 
       - name: Test nuxt
