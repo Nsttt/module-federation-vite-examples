@@ -35,6 +35,6 @@ export default defineConfig(() => ({
         },
       },
     }),
-    preact(),
+    preact({ prefreshEnabled: false }),
   ],
 }));
