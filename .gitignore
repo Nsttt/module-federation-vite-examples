@@ -33,6 +33,9 @@ svelte/**/build
 nuxt/**/.nuxt
 nuxt/**/.output
 nuxt/**/.nitro
+nuxt-ssr/**/.nuxt
+nuxt-ssr/**/.output
+nuxt-ssr/**/.nitro
 tanstack-ssr/**/.output
 tanstack-ssr/**/.tanstack
 tanstack-ssr/**/.mf

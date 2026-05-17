@@ -2,8 +2,10 @@ import { expect, test } from "@playwright/test";
 
 const isSharedState =
   process.env.PLAYWRIGHT_TEST_COMMAND?.includes("vue") ||
-  process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt");
+  (process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt") &&
+    !process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt-ssr"));
 const isTanStackSsr = process.env.PLAYWRIGHT_TEST_COMMAND?.includes("tanstack-ssr");
+const isNuxtSsr = process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt-ssr");
 const shouldLogTanStackSsr = Boolean(process.env.CI && isTanStackSsr);
 const diagnosticsByPage = new WeakMap<
   any,
@@ -110,6 +112,7 @@ const btn = (page: any, name: RegExp) => page.getByRole("button", { name }).firs
 
 test.describe("standard examples", () => {
   test.skip(isTanStackSsr, "tanstack-ssr has SSR-specific coverage");
+  test.skip(isNuxtSsr, "nuxt-ssr has SSR-specific coverage");
 
   test("host app and remote component should load and counters should work", async ({ page }) => {
     await page.goto("/");
@@ -214,5 +217,30 @@ test.describe("tanstack-ssr", () => {
 
     // Badge transitions from 'ssr' (server-rendered) to 'hydrated' once JS loads.
     await expect(page.getByText("hydrated").first()).toBeVisible({ timeout: 10000 });
+  });
+});
+
+test.describe("nuxt-ssr", () => {
+  test.skip(!isNuxtSsr, "nuxt-ssr only");
+
+  test("remote component should be present in the server HTML", async ({ request }) => {
+    const response = await request.get("/");
+    const html = await response.text();
+
+    expect(html).toContain("I&#39;m the host SSR app");
+    expect(html).toContain("I&#39;m the remote SSR app");
+    expect(html).toContain("Remote counter: 0");
+  });
+
+  test("remote component should hydrate in the browser", async ({ page }) => {
+    await page.goto("/");
+
+    await expect(page.getByText("I'm the host SSR app")).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText("I'm the remote SSR app")).toBeVisible({ timeout: 10000 });
+    await expect(page.locator('[data-remote-card-hydrated="true"]')).toBeVisible({
+      timeout: 10000,
+    });
+    await page.getByRole("button", { name: /Remote counter: 0/ }).click();
+    await expect(page.getByRole("button", { name: /Remote counter: 1/ })).toBeVisible();
   });
 });

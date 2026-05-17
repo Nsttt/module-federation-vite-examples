@@ -1,0 +1,9 @@
+{
+  "name": "nuxt-ssr",
+  "description": "Module Federation Vite + Nuxt SSR",
+  "scripts": {
+    "dev": "pnpm --filter nuxt-ssr-* dev",
+    "build": "pnpm --filter nuxt-ssr-* build",
+    "preview": "pnpm --filter nuxt-ssr-* preview"
+  }
+}

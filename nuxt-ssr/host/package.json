@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-ssr-host",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "predev": "nuxt prepare",
+    "dev": "nuxt dev --port 4273",
+    "preview": "nuxt preview --port 4273"
+  },
+  "dependencies": {
+    "@module-federation/vite": "catalog:",
+    "nuxt": "4.3.1",
+    "vue": "3.5.29"
+  }
+}

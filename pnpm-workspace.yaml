@@ -1,6 +1,6 @@
 packages:
-  - "{alpine,angular,lit,nuxt,preact,react,solid,svelte,tanstack,tanstack-ssr,vinext,vue}"
-  - "{alpine,angular,lit,nuxt,preact,react,solid,svelte,tanstack,tanstack-ssr,vinext,vue}/*"
+  - "{alpine,angular,lit,nuxt,nuxt-ssr,preact,react,solid,svelte,tanstack,tanstack-ssr,vinext,vue}"
+  - "{alpine,angular,lit,nuxt,nuxt-ssr,preact,react,solid,svelte,tanstack,tanstack-ssr,vinext,vue}/*"
 
 allowBuilds:
   "@parcel/watcher": true

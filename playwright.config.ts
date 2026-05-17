@@ -2,7 +2,9 @@ import { defineConfig, devices } from "@playwright/test";
 
 const webServerUrl = process.env.PLAYWRIGHT_TEST_COMMAND?.includes("tanstack-ssr")
   ? "http://localhost:4174"
-  : "http://localhost:4173";
+  : process.env.PLAYWRIGHT_TEST_COMMAND?.includes("nuxt-ssr")
+    ? "http://localhost:4273"
+    : "http://localhost:4173";
 const reportDir = process.env.PLAYWRIGHT_REPORT_DIR || "playwright-report";
 const testResultsDir = process.env.PLAYWRIGHT_TEST_RESULTS_DIR || "test-results";
 
@@ -15,7 +17,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["html", { outputFolder: reportDir }]],
   use: {
-    baseURL: "http://localhost:4173",
+    baseURL: webServerUrl,
     trace: "on-first-retry",
   },
   projects: [
